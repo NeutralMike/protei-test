@@ -4,19 +4,24 @@
   <groupId>Protei</groupId>
   <artifactId>TestProject</artifactId>
   <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>web</module>
-    </modules>
-    <packaging>pom</packaging>
+  <modules>
+    <!--<module>app</module>-->
+    <module>app/web</module>
+  </modules>
+  <packaging>pom</packaging>
   <name>TestProject</name>
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/com.google.gwt/gwt-user -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-user</artifactId>
       <version>2.8.2</version>
       <scope>provided</scope>
     </dependency>
-
   </dependencies>
 </project>

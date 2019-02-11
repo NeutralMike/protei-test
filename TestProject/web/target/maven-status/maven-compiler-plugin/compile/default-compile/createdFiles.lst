@@ -1,0 +1,7 @@
+com\mySampleApplication\client\MySampleApplication$1.class
+com\mySampleApplication\client\MySampleApplicationService.class
+com\mySampleApplication\server\MySampleApplicationServiceImpl.class
+com\mySampleApplication\client\MySampleApplicationServiceAsync.class
+com\mySampleApplication\client\MySampleApplication$MyAsyncCallback.class
+com\mySampleApplication\client\MySampleApplicationService$App.class
+com\mySampleApplication\client\MySampleApplication.class

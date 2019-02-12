@@ -3,9 +3,9 @@ package com.mySampleApplication.client;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.*;
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.DOM;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.model.somemodel.SomeClass;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>
@@ -53,4 +53,12 @@ public class MySampleApplication implements EntryPoint {
             label.setText("Failed to receive answer from server!");
         }
     }
+    class Some extends SomeClass{
+        public Some(int num, String value){
+            num=num;
+            value=value;
+        }
+
+    }
+
 }

@@ -18,11 +18,12 @@ public class MySampleApplication implements EntryPoint {
     public void onModuleLoad() {
         final Button button = new Button("Click me");
         final Label label = new Label();
+        final Some some = new Some(1,"Value");
 
         button.addClickHandler(new ClickHandler() {
             public void onClick(ClickEvent event) {
                 if (label.getText().equals("")) {
-                    MySampleApplicationService.App.getInstance().getMessage("Hello, World!", new MyAsyncCallback(label));
+                    MySampleApplicationService.App.getInstance().getMessage(some.getValue(), new MyAsyncCallback(label));
                 } else {
                     label.setText("");
                 }
@@ -53,12 +54,23 @@ public class MySampleApplication implements EntryPoint {
             label.setText("Failed to receive answer from server!");
         }
     }
-    class Some extends SomeClass{
+    class Some implements SomeClass{
+        private int num;
+        private String value;
         public Some(int num, String value){
-            num=num;
-            value=value;
+            this.num=num;
+            this.value=value;
         }
 
+        @Override
+        public String getValue() {
+            return value;
+        }
+
+        @Override
+        public int getNum() {
+            return num;
+        }
     }
 
 }

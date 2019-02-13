@@ -1,0 +1,16 @@
+package com.mySampleApplication.client;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.uibinder.client.UiBinder;
+
+public class Main {
+    interface mainUiBinder extends UiBinder<DivElement, Main> {
+    }
+
+    private static mainUiBinder ourUiBinder = GWT.create(mainUiBinder.class);
+
+    public Main() {
+        DivElement rootElement = ourUiBinder.createAndBindUi(this);
+    }
+}

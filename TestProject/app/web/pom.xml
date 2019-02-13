@@ -3,30 +3,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>TestProject</artifactId>
-        <groupId>Protei</groupId>
+        <artifactId>test-project</artifactId>
+        <groupId>protei</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <version>1.0-SNAPSHOT</version>
     <artifactId>web</artifactId>
-    <packaging>war</packaging>
-
     <name>web Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
-    <!--<url>http://www.example.com</url>-->
-
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>Protei</groupId>
+            <groupId>protei</groupId>
             <artifactId>somemodel</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
 
     <build>
         <finalName>web</finalName>
@@ -49,12 +45,14 @@
                             <classifier>sources</classifier>
                         </dependency>
                     </dependencies>
-                    <execution>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
+                    <executions>
+                        <execution>
+                            <phase>prepare-package</phase>
+                            <goals>
+                                <goal>compile</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <artifactId>maven-clean-plugin</artifactId>

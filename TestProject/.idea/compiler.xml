@@ -11,10 +11,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="app" target="1.7" />
-      <module name="model" target="1.7" />
       <module name="module" target="1.7" />
       <module name="submodel1" target="1.7" />
-      <module name="web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

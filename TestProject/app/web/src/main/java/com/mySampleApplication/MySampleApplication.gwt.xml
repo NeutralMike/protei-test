@@ -10,7 +10,7 @@
     <!-- Specify the app entry point class.                   -->
     <entry-point class='com.mySampleApplication.client.MySampleApplication'/>
 
-z
+
     <!-- Specify the app servlets.                   -->
     <servlet path='/MySampleApplicationService' class='com.mySampleApplication.server.MySampleApplicationServiceImpl'/>
 

@@ -24,7 +24,7 @@
     <profile>
       <id>model</id>
   <modules>
-    <module>models/model</module>
+    <module>modules/model</module>
   </modules>
     </profile>
   </profiles>

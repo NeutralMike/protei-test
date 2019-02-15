@@ -1,7 +1,7 @@
 package com.model.somemodel;
 public interface SomeClass {
-    public int getNum();
+    int getNum();
 
-    public String getValue();
+    String getValue();
 
 }

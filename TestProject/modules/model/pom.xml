@@ -18,9 +18,10 @@
     <build>
         <resources>
             <resource>
-                <directory>src/main/java/com/model/somemodel</directory>
+                <directory>src/main/java/com/model</directory>
                 <includes>
                     <include>**/*.java</include>
+                    <include>**/*.xml</include>
                 </includes>
             </resource>
         </resources>
